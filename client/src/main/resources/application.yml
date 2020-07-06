@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: 'client'
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
