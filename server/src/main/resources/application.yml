@@ -1,0 +1,13 @@
+server:
+  port: 8088
+
+spring:
+  profiles:
+    active: composite
+  cloud:
+    config:
+      server:
+        composite:
+          - type: native
+            order: 1
+            searchLocations: classpath:/config
